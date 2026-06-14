@@ -1,0 +1,89 @@
+# Copilot Instructions
+
+## Rol
+Desarrollador Frontend Senior.
+
+## Declaración obligatoria desde el inicio
+En este proyecto solo se permite usar HTML y Tailwind CSS v4.
+No usar React, Vue, Angular, Svelte, Bootstrap ni otros frameworks/librerías de UI.
+No usar `cdn.tailwindcss.com`.
+No usar configuraciones, sintaxis ni instrucciones de Tailwind CSS v3.
+
+## Objetivo general
+Construir un dashboard para una influencer con múltiples cuentas en redes sociales (Instagram, TikTok, YouTube, etc.) para consolidar métricas y visualizarlas en un tablero de reporte claro, narrativo y accionable.
+
+## Criterios obligatorios
+
+### 1) HTML correctamente formateado
+- Mantener indentación consistente (2 o 4 espacios, sin mezclar).
+- Cerrar todas las etiquetas correctamente.
+- Mantener una estructura limpia, legible y ordenada.
+
+### 2) Jerarquía correcta de etiquetas HTML
+- Usar jerarquía lógica de títulos (`h1`, `h2`, `h3`...) sin saltos incoherentes.
+- Organizar el documento con secciones claras.
+- Evitar anidación inválida de elementos.
+
+### 3) Uso estricto de HTML semántico
+- Usar etiquetas semánticas siempre que corresponda: `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`, `figure`, `figcaption`, `table`.
+- Evitar divitis (no abusar de `div` sin propósito semántico).
+- Cada bloque debe comunicar su propósito estructural.
+
+### 4) Stack y calidad visual
+- Usar exclusivamente HTML + Tailwind CSS v4.
+- No incluir Tailwind por CDN (`cdn.tailwindcss.com`).
+- No usar guías, configuración ni clases obsoletas de Tailwind v3.
+- Diseñar una interfaz contemporánea: buena tipografía, espaciado consistente, jerarquía visual clara, paleta coherente y contraste adecuado.
+- Aplicar enfoque responsive mobile-first.
+- Mantener estructura de archivos ordenada (HTML y CSS separados cuando aplique).
+- Evitar tamaños fijos en píxeles si existe alternativa utility de Tailwind.
+
+### 5) Accesibilidad (screen readers)
+- Incluir `aria-label` cuando aporte contexto real.
+- Usar `alt` descriptivo y significativo en imágenes.
+- Garantizar navegación por teclado y foco visible.
+- Mantener contraste suficiente entre texto y fondo.
+- Relacionar correctamente controles de formulario con `label` + `for` / `id`.
+
+### 6) Datos estructurados Schema.org
+- Incluir datos estructurados en JSON-LD.
+- Usar tipos adecuados según el contenido (por ejemplo: `Person`, `Organization`, `CreativeWork`, `VisualArtwork`, `Event`).
+- Mantener coherencia total entre contenido visible y datos estructurados.
+
+## Requerimientos de la influencer
+- Priorizar estilo, contenido y narrativa definidos por la influencer por encima de decisiones genéricas.
+- Mantener consistencia con su identidad visual y tono comunicativo.
+- Si falta información, usar placeholders claros y fáciles de reemplazar.
+
+## Plan de layout obligatorio
+Definir una estructura clara del dashboard:
+- Navegación principal: cabecera con `header` + `nav` o layout con `aside` lateral.
+- Bloque superior: KPIs principales.
+- Bloque intermedio: drivers de crecimiento/rendimiento.
+- Bloque inferior: tablas/listados comparativos o detalle por canal.
+
+## Componentes reutilizables
+- Diseñar patrones consistentes para cards KPI, widgets y tablas.
+- Reutilizar la misma estructura visual para elementos equivalentes.
+- Evitar variaciones arbitrarias entre componentes del mismo tipo.
+
+## Responsive obligatorio
+- Empezar por mobile-first.
+- Escalar con breakpoints de Tailwind (`sm:`, `md:`, `lg:`).
+- Mantener consistencia visual y de legibilidad en móvil, tablet y escritorio.
+
+## Reglas de estilos
+- Aplicar estilos con utilidades de Tailwind.
+- No mezclar frameworks CSS adicionales.
+- No usar CSS personalizado salvo casos mínimos y justificados (por ejemplo, Chart.css si se usa para gráficos opcionales).
+- Gráficos son opcionales; si se incluyen, priorizar legibilidad y jerarquía visual.
+
+## Checklist de validación antes de entregar
+- HTML válido y bien indentado.
+- Estructura semántica completa y coherente.
+- Enfoque responsive mobile-first implementado.
+- Accesibilidad básica cubierta (ARIA, `alt`, foco visible, contraste).
+- Schema.org implementado en JSON-LD y coherente con el contenido.
+- Layout completo: navegación, KPIs, drivers y tablas/listados.
+- Componentes reutilizables consistentes.
+- Solo HTML + Tailwind CSS v4, sin CDN de Tailwind, sin Tailwind v3.
